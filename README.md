@@ -339,6 +339,10 @@ ROC-AUC
 - Model registry
 - Production alias: models:/churnguard@production
 
+![mlflow-models](./data/mlflow-models.jpg)
+---
+![mlflow-models](./data/mlflow-metrics.jpg)
+
 ## Uninstall
 
 To uninstall the project and remove all associated volumes, run the following command:
