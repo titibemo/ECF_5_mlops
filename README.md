@@ -258,7 +258,72 @@ Response:
 ```json
 {
   "churn": false,
+  "probability": "Bool|null"
 }
+```
+
+#### POST /predict/batch
+
+```json
+[
+  {
+    "gender": "Female",
+    "SeniorCitizen": 0,
+    "Partner": "Yes",
+    "Dependents": "No",
+    "tenure": 1,
+    "PhoneService": "Yes",
+    "MultipleLines": "No",
+    "InternetService": "DSL",
+    "OnlineSecurity": "No",
+    "OnlineBackup": "No",
+    "DeviceProtection": "No",
+    "TechSupport": "No",
+    "StreamingTV": "No",
+    "StreamingMovies": "No",
+    "Contract": "Month-to-month",
+    "PaperlessBilling": "Yes",
+    "PaymentMethod": "Electronic check",
+    "MonthlyCharges": 29.85,
+    "TotalCharges": 29.85
+  },
+  {
+    "gender": "Male",
+    "SeniorCitizen": 1,
+    "Partner": "No",
+    "Dependents": "No",
+    "tenure": 24,
+    "PhoneService": "Yes",
+    "MultipleLines": "Yes",
+    "InternetService": "Fiber optic",
+    "OnlineSecurity": "No",
+    "OnlineBackup": "Yes",
+    "DeviceProtection": "Yes",
+    "TechSupport": "No",
+    "StreamingTV": "Yes",
+    "StreamingMovies": "Yes",
+    "Contract": "One year",
+    "PaperlessBilling": "Yes",
+    "PaymentMethod": "Credit card (automatic)",
+    "MonthlyCharges": 89.10,
+    "TotalCharges": 2138.40
+  }
+]
+```
+
+Response:
+
+```json
+[
+  {
+    "churn": false,
+    "probability": "Bool|null"
+  },
+  {
+    "churn": true,
+    "probability": "Bool|null"
+  }
+]
 ```
 
 ## MLflow Tracking
