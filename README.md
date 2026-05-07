@@ -22,13 +22,12 @@
    - [Running the API](#running-the-api)
    - [API Endpoints](#api-endpoints)
 6. [MLflow Tracking](#mlflow-tracking)
-7. [Docker](#docker)
-8. [Authors](#authors)
-9. [License](#license)
+7. [Authors](#authors)
+8. [License](#license)
 
 ---
 
-## About the Project
+## 1. About the Project
 
 **ChurnGuard** is an end-to-end **MLOps pipeline** for predicting customer churn for a telecom operator (TelcoFr, 1.2M customers).
 
@@ -45,7 +44,7 @@ The goal is to industrialize a machine learning model initially developed in a n
 
 ---
 
-## Built With
+## 2. Built With
 
 - ![Python](https://img.shields.io/badge/Python-3.11-blue) **Python 3.11** – Core language  
 - ![Scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E) **Scikit-learn** – ML models  
@@ -58,7 +57,7 @@ The goal is to industrialize a machine learning model initially developed in a n
 
 ---
 
-## Project Structure
+## 3. Project Structure
 
 ```text
 .
@@ -83,7 +82,7 @@ The goal is to industrialize a machine learning model initially developed in a n
 └── README.md
 ```
 
-## GETTING STARTED
+## 4. Getting started
 
 ### Prerequisites
 
@@ -186,7 +185,7 @@ From the root of the application, open a terminal and run the following command 
 docker compose up --build
 ```
 
-## Usage
+## 5. Usage
 
 ### Training Models
 
@@ -326,7 +325,7 @@ Response:
 ]
 ```
 
-## MLflow Tracking
+## 6. MLflow Tracking
 
 Once containers are up, you can access to the mlflow server on this address:
 
@@ -351,10 +350,10 @@ To uninstall the project and remove all associated volumes, run the following co
 docker compose down -v
 ```
 
-## [Authors](#authors)
+## 7. [Authors](#authors)
 
 - [GitHub Profile](https://github.com/titibemo)
 
-## [License](#license)
+## 8. [License](#license)
 
 This project is open-source and can be freely copied, modified, and distributed by anyone. No specific license is provided, but contributions and usage are welcome.
